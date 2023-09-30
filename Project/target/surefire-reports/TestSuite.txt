@@ -1,0 +1,48 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 6, Time elapsed: 542.048 s <<< FAILURE! - in TestSuite
+beforeMethod(runner.Testcase2)  Time elapsed: 181.861 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fdbccbae305620832caddfedbbbeone-0', ip: '10.80.9.25'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.20'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at runner.Testcase2.beforeMethod(Testcase2.java:38)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+	at runner.Testcase2.beforeMethod(Testcase2.java:38)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 34.85.201.58/34.85.201.58:4483 after 180000 ms
+	at runner.Testcase2.beforeMethod(Testcase2.java:38)
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 34.85.201.58/34.85.201.58:4483 after 180000 ms
+
+beforeMethod(runner.Testcase3)  Time elapsed: 180.016 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fdbccbae305620832caddfedbbbeone-0', ip: '10.80.9.25'
+	at runner.Testcase3.beforeMethod(Testcase3.java:41)
+Caused by: org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.20'
+Driver info: driver.version: RemoteWebDriver
+	at runner.Testcase3.beforeMethod(Testcase3.java:41)
+Caused by: java.util.concurrent.TimeoutException
+	at runner.Testcase3.beforeMethod(Testcase3.java:41)
+
+beforeMethod(runner.Testcase1)  Time elapsed: 180.012 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: 'fdbccbae305620832caddfedbbbeone-0', ip: '10.80.9.25'
+	at runner.Testcase1.beforeMethod(Testcase1.java:32)
+Caused by: org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.107+', java.version: '11.0.20'
+Driver info: driver.version: RemoteWebDriver
+	at runner.Testcase1.beforeMethod(Testcase1.java:32)
+Caused by: java.util.concurrent.TimeoutException
+	at runner.Testcase1.beforeMethod(Testcase1.java:32)
+
