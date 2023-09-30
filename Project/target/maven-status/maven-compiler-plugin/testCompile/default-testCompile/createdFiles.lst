@@ -2,8 +2,8 @@ utils/WebDriverHelper.class
 utils/ReadPropertyFile.class
 uistore/ToysUI.class
 runner/Testcase1.class
-utils/EventHandler.class
 utils/Base.class
+utils/EventHandler.class
 pages/Cart.class
 pages/Clothes.class
 uistore/CartUI.class
@@ -12,7 +12,7 @@ utils/Screenshot.class
 uistore/ToysUI$ToysPage.class
 utils/LoggerHandler.class
 utils/ExcelReader.class
-pages/ToysPage.class
 utils/Reporter.class
+pages/ToysPage.class
 runner/Testcase3.class
 runner/Testcase2.class
